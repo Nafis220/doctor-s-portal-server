@@ -4,6 +4,7 @@ import {
     Switch,
     Route, Redirect
   } from "react-router-dom"
+import Appointment from '../Home/Appointment/Appointment'
 import HomePage from '../Home/HomePage'
 
 const Main = () => {
@@ -13,7 +14,9 @@ const Main = () => {
                 <Route exact path='/'>
                     <HomePage></HomePage>
                 </Route>
-                
+                <Route path='/appointment'> 
+                <Appointment></Appointment>
+                </Route>
                 <Route path='*'>
                         <Redirect to="/" />
                       </Route>
